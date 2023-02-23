@@ -1,7 +1,10 @@
+const dotenv = require('dotenv');
+dotenv.config();
 const { ApolloServer } = require('apollo-server');
 const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
 const TrackAPI = require('./datasources/track-api');
+const cors = require('cors');
 
 async function startApolloServer(typeDefs, resolvers) {
   const server = new ApolloServer({
