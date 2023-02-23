@@ -12,6 +12,10 @@ async function startApolloServer(typeDefs, resolvers) {
         trackAPI: new TrackAPI(),
       };
     },
+    cors: {
+      credentials: true,
+      origin: ['https://odyssey-lift-off-part5-client-production-7c6e.up.railway.app/']
+    }
   });
 
   const { url, port } = await server.listen({ port: process.env.PORT || 4000 });
