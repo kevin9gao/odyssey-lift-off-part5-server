@@ -17,7 +17,7 @@ async function startApolloServer(typeDefs, resolvers) {
     },
     cors: {
       credentials: true,
-      origin: ['https://odyssey-lift-off-part5-client-production-3abc.up.railway.app/', 'https://studio.apollographql.com']
+      origin: ['https://odyssey-lift-off-part5-client-production-3abc.up.railway.app/']
     }
   });
 
