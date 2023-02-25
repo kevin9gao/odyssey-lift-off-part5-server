@@ -15,6 +15,7 @@ async function startApolloServer(typeDefs, resolvers) {
         trackAPI: new TrackAPI(),
       };
     },
+    introspection: true,
     cors: {
       credentials: true,
       origin: ['https://odyssey-lift-off-part5-client-production-3abc.up.railway.app/']
